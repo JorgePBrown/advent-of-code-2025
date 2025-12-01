@@ -1,0 +1,37 @@
+package main
+
+import (
+	"io"
+	"log"
+	"os"
+)
+
+func main() {
+	part := os.Args[1]
+	switch part {
+	case "1":
+		part1()
+	case "2":
+		part2()
+	}
+}
+
+func part1() {
+	f, err := os.Open("./day{{ .Day }}/input1")
+	if err != nil {
+		log.Fatal(err)
+	}
+	solvePart1(f)
+}
+func solvePart1(f io.Reader) {
+}
+
+func part2() {
+	f, err := os.Open("./day{{ .Day }}/input2")
+	if err != nil {
+		log.Fatal(err)
+	}
+	solvePart2(f)
+}
+func solvePart2(f io.Reader) {
+}
