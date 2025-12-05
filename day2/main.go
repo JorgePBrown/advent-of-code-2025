@@ -216,8 +216,3 @@ func divisibleBy(n int) []int {
 	}
 	return append(div, n)
 }
-
-type LinkNode struct {
-	v    int64
-	next *LinkNode
-}
